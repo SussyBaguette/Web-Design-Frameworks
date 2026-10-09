@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en-IE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Week 04 practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Hanken+Grotesk:wght@500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/app.css" />
+  </head>
+  <body class="bg-paper font-sans leading-relaxed text-ink">
+    <main class="mx-auto flex max-w-6xl flex-col gap-20 px-5 py-16">
+      <!-- In-class challenge: weekly timetable built with grid.
+           - grid-cols-5: one equal column per day (no pixel widths)
+           - gap-4: all spacing between cells comes from gap
+           - col-span-full on the banner: one item spans every column
+           - each day's sessions are a real <ul>, so they read in order -->
+      <section aria-labelledby="timetable-heading">
+        <h1
+          id="timetable-heading"
+          class="mb-6 font-display text-h2 leading-none font-extrabold tracking-tight"
+        >
+          Riverside Swim Club: weekly timetable
+        </h1>
+
+        <div class="grid grid-cols-5 gap-4">
+          <section
+            class="flex flex-col gap-3 border-(length:--rule) border-ink bg-paper p-4"
+            aria-labelledby="tt-mon"
+          >
+            <h2 id="tt-mon" class="font-display text-xl font-extrabold">
+              Monday
+            </h2>
+            <ul class="flex flex-col gap-3">
+              <li>
+                <span class="block font-display font-bold text-link">07:00</span>
+                Early lengths
+              </li>
+              <li>
+                <span class="block font-display font-bold text-link">18:00</span>
+                Beginner adults
+              </li>
+            </ul>
+          </section>
+
+          <section
+            class="flex flex-col gap-3 bg-green p-4 text-on-light"
+            aria-labelledby="tt-tue"
+          >
+            <h2 id="tt-tue" class="font-display text-xl font-extrabold">
+              Tuesday
+            </h2>
+            <ul class="flex flex-col gap-3">
+              <li>
+                <span class="block font-display font-bold">12:30</span>
+                Lunchtime lanes
+              </li>
+              <li>
+                <span class="block font-display font-bold">19:00</span>
+                Stroke technique
+              </li>
+            </ul>
+          </section>
+
+          <section
+            class="flex flex-col gap-3 border-(length:--rule) border-ink bg-paper p-4"
+            aria-labelledby="tt-wed"
+          >
+            <h2 id="tt-wed" class="font-display text-xl font-extrabold">
+              Wednesday
+            </h2>
+            <ul class="flex flex-col gap-3">
+              <li>
+                <span class="block font-display font-bold text-link">07:00</span>
+                Early lengths
+              </li>
+              <li>
+                <span class="block font-display font-bold text-link">17:30</span>
+                Junior squad
+              </li>
+              <li>
+                <span class="block font-display font-bold text-link">20:00</span>
+                Quiet swim
+              </li>
+            </ul>
+          </section>
+
+          <section
+            class="flex flex-col gap-3 bg-lime p-4 text-on-light"
+            aria-labelledby="tt-thu"
+          >
+            <h2 id="tt-thu" class="font-display text-xl font-extrabold">
+              Thursday
+            </h2>
+            <ul class="flex flex-col gap-3">
+              <li>
+                <span class="block font-display font-bold">18:00</span>
+                Water polo
+              </li>
+            </ul>
+          </section>
+
+          <section
+            class="flex flex-col gap-3 bg-pink p-4 text-on-light"
+            aria-labelledby="tt-fri"
+          >
+            <h2 id="tt-fri" class="font-display text-xl font-extrabold">
+              Friday
+            </h2>
+            <ul class="flex flex-col gap-3">
+              <li>
+                <span class="block font-display font-bold">12:30</span>
+                Lunchtime lanes
+              </li>
+              <li>
+                <span class="block font-display font-bold">17:00</span>
+                Open session
+              </li>
+            </ul>
+          </section>
+
+          <div
+            class="col-span-full flex items-center justify-between gap-4 bg-ink-deep p-5 text-on-dark"
+          >
+            <p class="font-bold">
+              First session is free. All sessions are at Riverside pool.
+            </p>
+            <a
+              class="inline-block border-(length:--rule) border-on-dark px-5 py-2 font-display font-extrabold text-on-dark no-underline"
+              href="#"
+              >Book a place</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Without the net: three adviser cards in equal columns, and a
+           band that spans all three (a span, not a fourth column). -->
+      <section aria-labelledby="advisers-heading">
+        <h2
+          id="advisers-heading"
+          class="mb-6 font-display text-h2 leading-none font-extrabold tracking-tight"
+        >
+          Meet the advisers
+        </h2>
+        <div class="grid grid-cols-3 gap-4">
+          <article class="bg-green p-6 text-on-light">
+            <h3 class="font-display text-xl font-extrabold">Aoife</h3>
+            <p>Study skills and planning</p>
+          </article>
+          <article class="bg-lime p-6 text-on-light">
+            <h3 class="font-display text-xl font-extrabold">Tomás</h3>
+            <p>Assistive technology</p>
+          </article>
+          <article class="bg-pink p-6 text-on-light">
+            <h3 class="font-display text-xl font-extrabold">Priya</h3>
+            <p>Exams and accommodations</p>
+          </article>
+          <a
+            class="col-span-3 bg-ink-deep p-6 text-center font-display text-xl font-extrabold text-on-dark"
+            href="#"
+            >Book an appointment</a
+          >
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
